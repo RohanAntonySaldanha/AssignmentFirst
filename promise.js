@@ -1,12 +1,12 @@
 function gameRating() {
-  let IsBad = false;
+  let isNotAvailable = true;
   return new Promise((resolve, reject) => {
-    if (IsBad) {
+    if (isNotAvailable) {
       reject({
-        message: "The Game is not Good",
+        message: "The Game Rating Property is not Available ",
       });
     } else {
-      resolve("It is a Good Game");
+      resolve("The Game is Rated");
     }
   });
 }
